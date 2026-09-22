@@ -1,8 +1,8 @@
-/* AZ Motorsport — scope wrapper. Keep this line and the matching one at the bottom.
+/* Apex Calibration — scope wrapper. Keep this line and the matching one at the bottom.
    Edit the catalogue data freely BETWEEN the wrappers. */
 (function () {
 /* =========================================================================
-   AZ MOTORSPORT — EUROPEAN BRANDS (ex-Germany) · each trim its own model
+   APEX CALIBRATION — EUROPEAN BRANDS (ex-Germany) · each trim its own model
    Ferrari · Lamborghini · McLaren · Aston Martin · Bentley · Maserati ·
    Alfa Romeo · Jaguar · Land Rover · MINI · Alpine · Lotus · Cupra ·
    Volvo · Bugatti   —   2013+ ·  X = exotic supercar (price on demand)

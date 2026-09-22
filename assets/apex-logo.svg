@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 96" width="560" height="96">
+  <path d="M44 10 L82 82 L6 82 Z" fill="none" stroke="#FF5C00" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M44 10 L82 82" stroke="#FF5C00" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="44" cy="10" r="6.5" fill="#FF5C00"/>
+  <text x="104" y="72" font-family="Archivo, Arial, sans-serif" font-size="40" font-weight="900" letter-spacing="3" fill="#ffffff">APEX<tspan fill="#FF5C00" font-weight="700"> CALIBRATION</tspan></text>
+</svg>

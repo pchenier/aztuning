@@ -77,10 +77,10 @@
       {
         onClick,
         className: `az-word ${className}`,
-        "aria-label": "AZ Motorsport \u2014 home",
+        "aria-label": "Apex Calibration \u2014 home",
         style: { display: "flex", alignItems: "center", gap: 0 }
       },
-      /* @__PURE__ */ React.createElement("img", { src: "/assets/az-logo.webp", alt: "AZ Motorsport", style: { height: h, width: "auto", display: "block" } })
+      /* @__PURE__ */ React.createElement("img", { src: "/assets/apex-logo.webp", alt: "Apex Calibration", style: { height: h, width: "auto", display: "block" } })
     );
   }
   function PrimaryBtn({ children, onClick, href, className = "", size = "md", icon = "arrow" }) {
@@ -260,7 +260,7 @@
           disabled: !clickable,
           onClick: () => clickable && (onJump == null ? void 0 : onJump(i)),
           className: `flex shrink-0 items-center gap-2 rounded-full px-3 py-1.5 text-[11px] font-bold uppercase tracking-[0.18em] transition-colors ${clickable ? "cursor-pointer hover:bg-white/5" : "cursor-default"}`,
-          style: { color: active ? "var(--accent)" : done ? "rgba(196,255,0,0.62)" : "var(--muted)" }
+          style: { color: active ? "var(--accent)" : done ? "rgba(255,92,0,0.62)" : "var(--muted)" }
         },
         /* @__PURE__ */ React.createElement("span", { className: `grid h-5 w-5 place-items-center rounded-full text-[10px] ${active ? "bg-[var(--accent)] text-black" : done ? "border border-[var(--accent)]/50 text-[var(--accent)]" : "border border-white/12 text-[var(--muted)]"}` }, done ? /* @__PURE__ */ React.createElement(Icon, { name: "check", size: 11, stroke: 3 }) : i + 1),
         /* @__PURE__ */ React.createElement("span", { className: "font-display whitespace-nowrap" }, ctx || s)

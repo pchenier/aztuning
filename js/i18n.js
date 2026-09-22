@@ -1,5 +1,5 @@
 /* =========================================================================
-   AZ MOTORSPORT — BILINGUAL (EN / FR)
+   APEX CALIBRATION — BILINGUAL (EN / FR)
    Loaded after the data files, before the components. Provides:
      t(key)     → short UI label in the active language (English fallback)
      content()  → the SITE_CONTENT copy block in the active language
@@ -83,7 +83,7 @@
     "res.contactPricing": { en: "Contact for pricing", fr: "Prix sur demande" },
     "res.stage": { en: "Stage", fr: "Stage" },
     "res.factory": { en: "Factory", fr: "Origine" },
-    "res.azTuned": { en: "AZ Tuned →", fr: "Reprogrammé AZ →" },
+    "res.azTuned": { en: "Apex Tuned →", fr: "Reprogrammé Apex →" },
     "res.estGains": { en: "Estimated gains — Stage 1 ≈ +20% and Stage 2 ≈ +35% over stock (HP & torque). Rough figures for guidance only; every calibration is dyno-validated and final output varies by vehicle, fuel grade and supporting hardware.", fr: "Gains estimés — Stage 1 ≈ +20 % et Stage 2 ≈ +35 % par rapport à l’origine (puissance et couple). Chiffres approximatifs à titre indicatif; chaque calibration est validée au dyno et le résultat final varie selon le véhicule, l’octane et les modifications installées." },
     "res.options": { en: "[ Options & add-ons ]", fr: "[ Options et ajouts ]" },
     "res.tcuTitle": { en: "TCU / Gearbox Tune", fr: "Reprogrammation TCU / boîte" },
@@ -160,7 +160,7 @@
     "deal.opening": { en: "New location opening — stay tuned.", fr: "Nouvel emplacement à venir — restez à l’affût." },
     "deal.maps": { en: "Open in Maps", fr: "Ouvrir dans Maps" },
     "deal.becomeTitle": { en: "Want to become a dealer?", fr: "Devenir revendeur?" },
-    "deal.becomeBody": { en: "Run a performance shop and want to offer AZ Motorsport calibrations? Let’s talk.", fr: "Vous gérez un atelier performance et souhaitez offrir les calibrations AZ Motorsport? Parlons-en." },
+    "deal.becomeBody": { en: "Run a performance shop and want to offer Apex Calibration calibrations? Let’s talk.", fr: "Vous gérez un atelier performance et souhaitez offrir les calibrations Apex Calibration? Parlons-en." },
     "deal.getInTouch": { en: "Get in touch", fr: "Nous contacter" },
 
     // contact page
@@ -194,7 +194,7 @@
     "ft.explore": { en: "Explore", fr: "Explorer" },
     "ft.mainStore": { en: "Main store ↗", fr: "Boutique principale ↗" },
     "ft.visit": { en: "Visit", fr: "Nous visiter" },
-    "ft.rights": { en: "AZ Motorsport. Calibrations intended for off-road / motorsport use.", fr: "AZ Motorsport. Calibrations destinées à un usage hors route / compétition." },
+    "ft.rights": { en: "Apex Calibration. Calibrations intended for off-road / motorsport use.", fr: "Apex Calibration. Calibrations destinées à un usage hors route / compétition." },
     "ft.figures": { en: "Figures are estimates — every calibration is dyno-validated per vehicle.", fr: "Les chiffres sont des estimations — chaque calibration est validée au dyno, véhicule par véhicule." },
 
     // engine list (selector flow screens — mostly unused, kept for completeness)
@@ -204,7 +204,7 @@
     "hw.requires": { en: "requires", fr: "nécessite" },
     "hw.exactPre": { en: "Shop the exact part matched to your ", fr: "Achetez la pièce exacte adaptée à votre " },
     "hw.findPre": { en: "Find the right part for your ", fr: "Trouvez la bonne pièce pour votre " },
-    "hw.storeSuffix": { en: "on the AZ Motorsport store.", fr: "sur la boutique AZ Motorsport." },
+    "hw.storeSuffix": { en: "on the Apex Calibration store.", fr: "sur la boutique Apex Calibration." },
     "hw.viewPart": { en: "View part", fr: "Voir la pièce" },
     "hw.shop": { en: "Shop", fr: "Magasiner" },
     "downpipes": { en: "downpipes", fr: "des downpipes" },
@@ -252,7 +252,7 @@
       },
       reversible: {
         title: "Votre fichier d’origine est toujours conservé.",
-        body: "Avant de toucher à quoi que ce soit, on lit et archive votre calibration d’usine. Chaque reprogrammation AZ est entièrement réversible — un retour à l’origine est possible en tout temps pour l’entretien, la garantie ou la revente, sans aucune trace.",
+        body: "Avant de toucher à quoi que ce soit, on lit et archive votre calibration d’usine. Chaque reprogrammation Apex est entièrement réversible — un retour à l’origine est possible en tout temps pour l’entretien, la garantie ou la revente, sans aucune trace.",
       },
       process: [
         { n: "01", t: "Dites-nous votre véhicule", d: "Année, moteur et toute pièce installée. On confirme la bonne calibration." },

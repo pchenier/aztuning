@@ -1,8 +1,8 @@
-/* AZ Motorsport — scope wrapper. Keep this line and the matching one at the bottom.
+/* Apex Calibration — scope wrapper. Keep this line and the matching one at the bottom.
    Edit the catalogue data freely BETWEEN the wrappers. */
 (function () {
 /* =========================================================================
-   AZ MOTORSPORT — CATALOGUE CORE  (helpers · tune profiles · static copy)
+   APEX CALIBRATION — CATALOGUE CORE  (helpers · tune profiles · static copy)
    =========================================================================
    The catalogue is split across data files for sanity:
      data.jsx        ← this file: config, helpers, tune profiles, site copy
@@ -18,7 +18,7 @@
 
    The profile (see PROFILES below) auto-derives Stage 1 / Stage 2 / AZM+
    plus Sound-Effect and GearBox add-ons where they make sense. PRICES are
-   confirmed accurate by AZ. Power & torque GAINS are estimates (disclosed on
+   confirmed accurate by Apex Calibration. Power & torque GAINS are estimates (disclosed on
    every detail page) — tweak the PROFILES table to refine them globally.
 
    Per-engine overrides:  eng(...,"t4", { fuel:"Diesel", sound:false, p1:899 })
@@ -26,12 +26,12 @@
 
    ── STAGE-2 PART LINK (the "downpipe / exhaust required" shop button) ─────
    Selecting Stage 2 reveals a drop-down that links to the matching hardware on
-   the azmotorsport.ca store. By default it deep-links a store search built from
+   the apexcalibration.ca store. By default it deep-links a store search built from
    the brand + chassis (works for every car). To point a vehicle at its EXACT
    product page instead, add a `part` override to that engine:
 
      eng("3.0 Twin-Turbo","S58","G80",480,550,"t6",85,
-         { part:"https://azmotorsport.ca/products/azm-g80-m3-g2-m4-...-downpipe" })
+         { part:"https://apexcalibration.ca/products/azm-g80-m3-g2-m4-...-downpipe" })
 
    `part` may be one URL (string) or { downpipe:"…", exhaust:"…" } when a car
    needs different parts at different stages. Paste the URL straight from the
@@ -49,8 +49,8 @@
 const CONFIG = {
   showPrices: true,                       // false → hides every price site-wide
   currencySuffix: "$",
-  storeUrl: "https://azmotorsport.ca",    // main Shopify store (footer "Main store" + "Visit the store")
-  bookingUrl: "https://www.gorendezvous.com/en/azmotorsport/", // online booking (header "Appointment" + "Book an appointment")
+  storeUrl: "https://apexcalibration.ca",    // main Shopify store (footer "Main store" + "Visit the store")
+  bookingUrl: "https://www.gorendezvous.com/en/apexcalibration/", // online booking (header "Appointment" + "Book an appointment")
   siteUrl: "https://aztuning.ca", // this catalogue's own URL (used in <head>/sitemap) — confirm your domain
 
   /* ── CONTACT FORM ────────────────────────────────────────────────────────
@@ -63,9 +63,9 @@ const CONFIG = {
      Whatever you pick, the success screen ALWAYS offers Email / WhatsApp / IG,
      so a customer can never hit a dead end.                                   */
   formProvider: "formspree",
-  formEndpoint: "https://formspree.io/f/xzdqrqvn",  // AZ Tuning — Formspree endpoint
+  formEndpoint: "https://formspree.io/f/xzdqrqvn",  // Apex Calibration — Formspree endpoint
 
-  email: "info@azmotorsport.ca",
+  email: "info@apexcalibration.ca",
   whatsapp: "15817458680",                // digits only, intl format (for wa.me links)
 };
 
@@ -151,7 +151,7 @@ function eng(label, family, chassis, power, torque, profile, msrp, opts = {}) {
     label, power, chassis, engineFamily: family, msrp,
     fuel: opts.fuel || (profile === "tdi" ? "Diesel" : "Petrol"),
     stages: mkStages(power, torque, profile, msrp, opts),
-    part: opts.part || null,           // exact azmotorsport.ca product URL(s) for the Stage-2 hardware
+    part: opts.part || null,           // exact apexcalibration.ca product URL(s) for the Stage-2 hardware
     tcu: opts.tcu != null ? opts.tcu : null,             // $ TCU / gearbox tune  — else 40% of Stage 2
     multimap: opts.multimap != null ? opts.multimap : null, // $ multimap add-on  — else 20% of Stage 2
   };
@@ -180,7 +180,7 @@ const SITE_CONTENT = {
   },
   reversible: {
     title: "Your stock file is always saved.",
-    body: "Before we touch anything, we read and archive your factory calibration. Every AZ tune is fully reversible — return to stock anytime for service, warranty or resale, no trace left behind.",
+    body: "Before we touch anything, we read and archive your factory calibration. Every Apex tune is fully reversible — return to stock anytime for service, warranty or resale, no trace left behind.",
   },
   process: [
     { n: "01", t: "Tell us your vehicle", d: "Year, engine and any hardware you're running. We confirm the right calibration." },
@@ -226,18 +226,18 @@ const SITE_CONTENT = {
     { src: "/assets/videos/dyno-2026-03-14.mp4" },
   ],
   instagram: {
-    handle: "a.z_motorsport",
-    url: "https://www.instagram.com/a.z_motorsport/",
+    handle: "apex.calibration",
+    url: "https://www.instagram.com/apex.calibration/",
     widget: "",
   },
   shop: {
     address: "9620 Rue Ignace, local O, Brossard, QC J4Y 2R4",
     phone: "+1 (581) 745-8680",
-    email: "info@azmotorsport.ca",
+    email: "info@apexcalibration.ca",
     hours: "Tue–Sat · 10 AM – 6 PM EST",
-    ig: "@a.z_motorsport",
-    tiktok: "@az.motorsport",
-    youtube: "@azmotorsport1",
+    ig: "@apex.calibration",
+    tiktok: "@apex.calibration",
+    youtube: "@apex.calibration",
   },
 
   /* ── DYNO page ──────────────────────────────────────────────────────────── */
@@ -257,7 +257,7 @@ const SITE_CONTENT = {
     ],
   },
 
-  /* ── DEALERS page ── partner shops that install / represent AZ Motorsport ── */
+  /* ── DEALERS page ── partner shops that install / represent Apex Calibration ── */
   dealers: {
     intro: "We work closely with the finest partner garages across Québec and Ontario, so clients everywhere get top-notch service and the very best from their vehicle.",
     list: [
@@ -459,7 +459,7 @@ function slugify(s) {
 }
 
 /* =========================================================================
-   STAGE-2 HARDWARE → AZ MOTORSPORT STORE LINK
+   STAGE-2 HARDWARE → APEX CALIBRATION STORE LINK
    Stage 2 always needs supporting hardware (a downpipe, exhaust, headers…).
    needsHardware() flags any stage whose requirement names such a part;
    partLink() returns where to buy it on the store:
@@ -499,7 +499,7 @@ function partLink(brand, model, engine, stage) {
    Edit the copy here and it updates everywhere on the next build.
    ========================================================================= */
 function seoMeta(view, sel) {
-  const base = "AZ Motorsport";
+  const base = "Apex Calibration";
   const site = String(CONFIG.siteUrl || "https://aztuning.ca").replace(/\/$/, "");
   // ── individual vehicle page ──
   if (view === "results" && sel && sel.brand && sel.model && sel.gen && sel.engine) {
@@ -522,11 +522,11 @@ function seoMeta(view, sel) {
     tuning:  { title: `ECU Tuning — Stage 1, 2 & 3 Custom Calibrations | ${base}`,
                description: "Dyno-validated Stage 1, 2 & 3 ECU tuning for 400+ Euro & exotic platforms — more power, sharper throttle response, fully reversible. Brossard, QC or remote worldwide." },
     dyno:    { title: `Dyno Tuning — 1700 HP Linked Braked Dyno | ${base}`,
-               description: "Precise dyno power runs within a 0.2% margin — RWD, FWD & AWD up to 1700 hp. HP & torque measured, logged and validated at AZ Motorsport in Brossard, Québec." },
+               description: "Precise dyno power runs within a 0.2% margin — RWD, FWD & AWD up to 1700 hp. HP & torque measured, logged and validated at Apex Calibration in Brossard, Québec." },
     dealers: { title: `Dealers & Partner Garages — Québec & Ontario | ${base}`,
-               description: "AZ Motorsport partner garages across Québec & Ontario — authorized shops for professional installation and tuning support near you." },
+               description: "Apex Calibration partner garages across Québec & Ontario — authorized shops for professional installation and tuning support near you." },
     contact: { title: `Contact & Booking — ECU Tuning in Brossard, QC | ${base}`,
-               description: "Book your ECU tuning at AZ Motorsport in Brossard, Québec, or arrange remote tuning worldwide. Call +1 (581) 745-8680 or message us." },
+               description: "Book your ECU tuning at Apex Calibration in Brossard, Québec, or arrange remote tuning worldwide. Call +1 (581) 745-8680 or message us." },
   };
   if (PAGES[view]) return { title: PAGES[view].title, description: PAGES[view].description, canonical: site + "/" + view, path: "/" + view };
   // ── home ──

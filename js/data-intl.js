@@ -1,8 +1,8 @@
-/* AZ Motorsport — scope wrapper. Keep this line and the matching one at the bottom.
+/* Apex Calibration — scope wrapper. Keep this line and the matching one at the bottom.
    Edit the catalogue data freely BETWEEN the wrappers. */
 (function () {
 /* =========================================================================
-   AZ MOTORSPORT — INTERNATIONAL BRANDS · each trim its own model
+   APEX CALIBRATION — INTERNATIONAL BRANDS · each trim its own model
    Nissan · Toyota · Honda · Ford · Chevrolet · Hyundai · Subaru — 2013+
    This file loads LAST and assembles window.SEED_DATA from all brand files.
    ========================================================================= */

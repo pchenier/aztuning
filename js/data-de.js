@@ -1,19 +1,19 @@
-/* AZ Motorsport — scope wrapper. Keep this line and the matching one at the bottom.
+/* Apex Calibration — scope wrapper. Keep this line and the matching one at the bottom.
    Edit the catalogue data freely BETWEEN the wrappers. */
 (function () {
 /* =========================================================================
-   AZ MOTORSPORT — GERMAN BRANDS  (Audi · BMW · Mercedes-AMG · Porsche · VW)
+   APEX CALIBRATION — GERMAN BRANDS  (Audi · BMW · Mercedes-AMG · Porsche · VW)
    Each TRIM is its own model (330i ≠ 335i ≠ M3 ≠ M3 Competition, etc).
    Coverage 2013+.  eng(label, family, chassis, hp, Nm, profile, MSRP$k)
    X = exotic supercar → price on demand.
    ========================================================================= */
 const { brand, model, gen, eng, X } = window.__AZHELP;
 
-/* Exact Stage-2 downpipe product pages on the store (azmotorsport.ca).
+/* Exact Stage-2 downpipe product pages on the store (apexcalibration.ca).
    Add a `part:` to any engine to point its drop-down at the precise product;
    anything without one falls back to a brand + chassis store search. */
-const DP_BMW_S58    = "https://azmotorsport.ca/products/azm-g80-m3-g2-m4-3-0t-downpipe-catless-2021";
-const DP_AUDI_C8_RS = "https://azmotorsport.ca/products/3440-azm-rs6-rs7-c8-2020-downpipe-catless";
+const DP_BMW_S58    = "https://apexcalibration.ca/products/azm-g80-m3-g2-m4-3-0t-downpipe-catless-2021";
+const DP_AUDI_C8_RS = "https://apexcalibration.ca/products/3440-azm-rs6-rs7-c8-2020-downpipe-catless";
 
 window.__AZB.push(
 

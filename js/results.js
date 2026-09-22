@@ -6,7 +6,7 @@
     const hasPhoto = !!photo && imgOk;
     const hpN = useCountUp(hp, [stageKey, hp]);
     const tqN = useCountUp(tq, [stageKey, tq]);
-    return /* @__PURE__ */ React.createElement("div", { className: "relative overflow-hidden rounded-3xl border border-[var(--line)] bg-black" }, /* @__PURE__ */ React.createElement("div", { className: "pointer-events-none absolute -top-28 left-1/2 h-[300px] w-[420px] -translate-x-1/2 rounded-full bg-[var(--accent)] opacity-[0.08] blur-[110px]" }), /* @__PURE__ */ React.createElement("div", { className: "relative z-10 flex justify-center pt-7" }, /* @__PURE__ */ React.createElement("img", { src: "/assets/az-logo.webp", alt: "AZ Motorsport", className: "h-8 w-auto opacity-90" })), /* @__PURE__ */ React.createElement("div", { className: "relative z-10 grid grid-cols-2 gap-2 px-6 pt-6 text-center" }, /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("div", { className: "font-display text-[12px] font-bold uppercase tracking-[0.22em] text-[var(--text2)]" }, t("res.horsepower")), /* @__PURE__ */ React.createElement("div", { className: "font-stat mt-1 text-[clamp(4rem,11vw,8rem)] text-white" }, hpN)), /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("div", { className: "font-display text-[12px] font-bold uppercase tracking-[0.22em] text-[var(--text2)]" }, t("res.torque")), /* @__PURE__ */ React.createElement("div", { className: "font-stat mt-1 text-[clamp(4rem,11vw,8rem)] text-white" }, tqN))), /* @__PURE__ */ React.createElement("div", { className: "relative z-10 -mt-2" }, hasPhoto ? /* @__PURE__ */ React.createElement("div", { className: "relative" }, /* @__PURE__ */ React.createElement("div", { className: "absolute inset-0", style: { background: "linear-gradient(180deg, rgba(234,234,232,0) 15%, rgba(234,234,232,0.5) 33%, #ececea 50%, #dcdcd9 100%)" } }), /* @__PURE__ */ React.createElement(
+    return /* @__PURE__ */ React.createElement("div", { className: "relative overflow-hidden rounded-3xl border border-[var(--line)] bg-black" }, /* @__PURE__ */ React.createElement("div", { className: "pointer-events-none absolute -top-28 left-1/2 h-[300px] w-[420px] -translate-x-1/2 rounded-full bg-[var(--accent)] opacity-[0.08] blur-[110px]" }), /* @__PURE__ */ React.createElement("div", { className: "relative z-10 flex justify-center pt-7" }, /* @__PURE__ */ React.createElement("img", { src: "/assets/apex-logo.webp", alt: "Apex Calibration", className: "h-8 w-auto opacity-90" })), /* @__PURE__ */ React.createElement("div", { className: "relative z-10 grid grid-cols-2 gap-2 px-6 pt-6 text-center" }, /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("div", { className: "font-display text-[12px] font-bold uppercase tracking-[0.22em] text-[var(--text2)]" }, t("res.horsepower")), /* @__PURE__ */ React.createElement("div", { className: "font-stat mt-1 text-[clamp(4rem,11vw,8rem)] text-white" }, hpN)), /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("div", { className: "font-display text-[12px] font-bold uppercase tracking-[0.22em] text-[var(--text2)]" }, t("res.torque")), /* @__PURE__ */ React.createElement("div", { className: "font-stat mt-1 text-[clamp(4rem,11vw,8rem)] text-white" }, tqN))), /* @__PURE__ */ React.createElement("div", { className: "relative z-10 -mt-2" }, hasPhoto ? /* @__PURE__ */ React.createElement("div", { className: "relative" }, /* @__PURE__ */ React.createElement("div", { className: "absolute inset-0", style: { background: "linear-gradient(180deg, rgba(234,234,232,0) 15%, rgba(234,234,232,0.5) 33%, #ececea 50%, #dcdcd9 100%)" } }), /* @__PURE__ */ React.createElement(
       "img",
       {
         src: photo,
@@ -51,7 +51,7 @@
         "div",
         {
           className: "flex items-center justify-center bg-[var(--accent)] font-mono text-[12px] font-bold tabular-nums text-black",
-          style: { transition: "flex-grow .8s cubic-bezier(.2,.6,.2,1)", flexGrow: w ? gainPct : 0, boxShadow: "0 0 18px rgba(196,255,0,.4)" }
+          style: { transition: "flex-grow .8s cubic-bezier(.2,.6,.2,1)", flexGrow: w ? gainPct : 0, boxShadow: "0 0 18px rgba(255,92,0,.4)" }
         },
         "+",
         gain
@@ -67,7 +67,7 @@
         onClick: onPick,
         "aria-expanded": expandable ? !!open : void 0,
         className: `flex w-full items-center gap-3.5 rounded-xl border px-4 py-3.5 text-left transition-all duration-200
-        ${active ? "border-[var(--accent)] bg-[var(--accent)]/[0.07] shadow-[0_0_22px_-6px_rgba(196,255,0,0.4)]" : "border-[var(--line)] bg-[var(--panel)] hover:border-white/20"}`
+        ${active ? "border-[var(--accent)] bg-[var(--accent)]/[0.07] shadow-[0_0_22px_-6px_rgba(255,92,0,0.4)]" : "border-[var(--line)] bg-[var(--panel)] hover:border-white/20"}`
       },
       /* @__PURE__ */ React.createElement("span", { className: `grid h-6 w-6 shrink-0 place-items-center rounded-full border transition-colors
         ${active ? "border-[var(--accent)] bg-[var(--accent)] text-black" : "border-white/25 text-transparent"}` }, /* @__PURE__ */ React.createElement(Icon, { name: "check", size: 13, stroke: 3 })),

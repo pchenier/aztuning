@@ -60,7 +60,7 @@
         "div",
         {
           className: "pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100",
-          style: { background: "radial-gradient(60% 70% at 50% 40%, rgba(196,255,0,0.07), transparent 70%)" }
+          style: { background: "radial-gradient(60% 70% at 50% 40%, rgba(255,92,0,0.07), transparent 70%)" }
         }
       ),
       /* @__PURE__ */ React.createElement(VehicleImage, { model: m, brand, className: "relative h-36 w-full rounded-xl" }),

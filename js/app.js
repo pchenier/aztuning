@@ -92,7 +92,7 @@
     return { view: "home" };
   }
   function titleFor(view, sel) {
-    const base = "AZ Motorsport";
+    const base = "Apex Calibration";
     if (view === "results" && sel && sel.brand) return `${sel.brand.name} ${sel.model.name} \u2014 ${base}`;
     const keys = { home: "home.eyebrow", tuning: "nav.tuning", dyno: "nav.dyno", dealers: "nav.dealers", contact: "nav.contact" };
     return keys[view] ? `${t(keys[view])} \u2014 ${base}` : base;
